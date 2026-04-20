@@ -1,0 +1,52 @@
+{
+  "checkin_request": {
+    "action": "checkin",
+    "agent_info": {
+      "sid": "string",
+      "id": "string",
+      "hostname": "string",
+      "username": "string",
+      "os": "string",
+      "os_version": "string",
+      "platform": "string",
+      "ip": "string",
+      "architecture": "string",
+      "pid": "int",
+      "cwd": "string",
+      "status": "string",
+      "last_seen": "float",
+      "privilege": "string",
+      "start_time": "string"
+    },
+    "pending_tasks": "int"
+  },
+
+  "checkin_response": {
+    "tasks": [
+      {
+        "task_id": "string",
+        "action": "string",
+        "params": {}
+      }
+    ]
+  },
+
+  "task_generic": {
+    "task_id": "string",
+    "action": "string",
+    "params": {}
+  },
+
+  "result": {
+    "sid": "string",
+    "task_id": "string",
+    "status": "success | error",
+    "output": "string | object",
+    "error": "string"
+  },
+
+  "encrypted_message_format": {
+    "optional": true,
+    "data": "BASE64_AES_ENCRYPTED_JSON"
+  }
+}
