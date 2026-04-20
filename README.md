@@ -182,16 +182,16 @@ Developed by **Calebe Araujo**
 
 ---
 
-## ⭐ Why this project?
+## 🎯 Why this project?
 
-This project demonstrates:
+This project was built to explore and demonstrate core concepts behind Command and Control (C2) frameworks from a defensive and educational perspective.
 
-* Understanding of C2 architecture
-* Client-server communication design
-* Modular code structure
-* Basic offensive security concepts
-* Practical Python development
+Through this implementation, I focused on:
 
----
+- Understanding how agents communicate with a central server  
+- Designing a task-based execution model  
+- Building a modular and extensible architecture  
+- Exploring real-world trade-offs between functionality and security  
+- Gaining hands-on experience with system interaction and remote operations  
 
-If you found this project useful, feel free to ⭐ the repository.
+Rather than replicating a full-featured C2, the goal was to create a clear, functional foundation that can be analyzed, extended, and improved over time.
